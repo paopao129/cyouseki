@@ -1,0 +1,62 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/yukiakiba/dev/fortran_blue/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/096dc1c1/
+100	test_clear_new.f90	/^100 continue$/;"	l	program:test_clear_new	file:
+K	test_clear_new.f90	/^  character(len=5) K$/;"	v	program:test_clear_new
+a	test_clear_new.f90	/^integer :: i, j, ios,cnt= 0,a(/;"	v	program:test_clear_new
+a	test_clear_new.f90	/^integer :: i, j, ios,flag/;"	v	program:test_clear_new
+a	test_clear_new.f90	/^real/;"	v	program:test_clear_new
+a	test_kumamoto.f90	/^real/;"	v	program:test_kumamoto
+c	test_clear_new.f90	/^  integer c$/;"	v	program:test_clear_new
+char_ary	test_clear_new.f90	/^character :: char_ary(/;"	v	program:test_clear_new
+char_ary	test_kumamoto.f90	/^character :: char_ary(/;"	v	program:test_kumamoto
+cnt	test_clear_new.f90	/^integer :: i, j, ios,cnt=/;"	v	program:test_clear_new
+cnt	test_clear_new.f90	/^integer :: i, j, ios,flag,cnt=/;"	v	program:test_clear_new
+dd	test_clear_new.f90	/^  character(len=5) yyyy, mm, dd$/;"	v	program:test_clear_new
+flag	test_clear_new.f90	/^integer :: i, j, ios,flag$/;"	v	program:test_clear_new
+flag	test_clear_new.f90	/^integer :: i, j, ios,flag,/;"	v	program:test_clear_new
+flag	test_kumamoto.f90	/^integer :: i, j, ios,flag$/;"	v	program:test_kumamoto
+i	test_clear_new.f90	/^  in/;"	v	program:test_clear_new
+i	test_clear_new.f90	/^in/;"	v	program:test_clear_new
+i	test_kumamoto.f90	/^in/;"	v	program:test_kumamoto
+ios	test_clear_new.f90	/^integer :: i, j, ios,/;"	v	program:test_clear_new
+ios	test_kumamoto.f90	/^integer :: i, j, ios,/;"	v	program:test_kumamoto
+j	test_clear_new.f90	/^integer :: i, j,/;"	v	program:test_clear_new
+j	test_kumamoto.f90	/^integer :: i, j,/;"	v	program:test_kumamoto
+line_num	test_clear_new.f90	/^integer, parameter :: line_num /;"	v	program:test_clear_new
+m	test_clear_new.f90	/^integer, parame/;"	v	program:test_clear_new
+m	test_kumamoto.f90	/^integer, parame/;"	v	program:test_kumamoto
+max_lat	test_clear_new.f90	/^real :: a(n, m),x,max_lat,/;"	v	program:test_clear_new
+max_lat	test_clear_new.f90	/^real :: x,max_lat,/;"	v	program:test_clear_new
+max_lat	test_kumamoto.f90	/^real :: a(n, m),x,max_lat,/;"	v	program:test_kumamoto
+max_lon	test_clear_new.f90	/^real :: a(n, m),x,max_lat,max_lon,/;"	v	program:test_clear_new
+max_lon	test_clear_new.f90	/^real :: x,max_lat,max_lon,/;"	v	program:test_clear_new
+max_lon	test_kumamoto.f90	/^real :: a(n, m),x,max_lat,max_lon,/;"	v	program:test_kumamoto
+min_lat	test_clear_new.f90	/^real :: a(n, m),x,max_lat,max_lon,min_lat,/;"	v	program:test_clear_new
+min_lat	test_clear_new.f90	/^real :: x,max_lat,max_lon,min_lat,/;"	v	program:test_clear_new
+min_lat	test_kumamoto.f90	/^real :: a(n, m),x,max_lat,max_lon,min_lat,/;"	v	program:test_kumamoto
+min_lon	test_clear_new.f90	/^real :: a(n, m),x,max_lat,max_lon,min_lat,min_lon$/;"	v	program:test_clear_new
+min_lon	test_clear_new.f90	/^real :: x,max_lat,max_lon,min_lat,min_lon$/;"	v	program:test_clear_new
+min_lon	test_kumamoto.f90	/^real :: a(n, m),x,max_lat,max_lon,min_lat,min_lon$/;"	v	program:test_kumamoto
+mm	test_clear_new.f90	/^  character(len=5) yyyy, mm,/;"	v	program:test_clear_new
+n	test_clear_new.f90	/^  int/;"	v	program:test_clear_new
+n	test_clear_new.f90	/^int/;"	v	program:test_clear_new
+n	test_kumamoto.f90	/^int/;"	v	program:test_kumamoto
+skip_lines	test_clear_new.f90	/^integer :: i, j, ios,cnt= 0,a(line_num, m),skip_lines,/;"	v	program:test_clear_new
+skip_lines	test_clear_new.f90	/^integer :: i, j, ios,flag,cnt= 0,a(line_num, m),skip_lines,/;"	v	program:test_clear_new
+test_clear_new	test_clear_new.f90	/^program test_clear_new$/;"	p
+test_kumamoto	test_kumamoto.f90	/^program test_kumamoto$/;"	p
+token	test_clear_new.f90	/^character(len=128) :: token(/;"	v	program:test_clear_new
+token	test_kumamoto.f90	/^character(len=128) :: token(/;"	v	program:test_kumamoto
+x	test_clear_new.f90	/^real :: a(n, m),x,/;"	v	program:test_clear_new
+x	test_clear_new.f90	/^real :: x,/;"	v	program:test_clear_new
+x	test_kumamoto.f90	/^real :: a(n, m),x,/;"	v	program:test_kumamoto
+yyyy	test_clear_new.f90	/^  character(len=5) yyyy,/;"	v	program:test_clear_new

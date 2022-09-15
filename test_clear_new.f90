@@ -1,55 +1,48 @@
 program test_clear_new
-  
-  implicit none
-  integer n
-  character(len=5) K
-  character(len=5) yyyy, mm, dd
-  integer i
+implicit none
+integer, parameter :: line_num = 109988, m = 4
+integer :: i, j, ios,cnt= 0,a(line_num, m),skip_lines,n
+character(len=128) :: token(m)
+character :: char_ary(line_num,m)
+skip_lines = 21
+n  = line_num-skip_lines
+open(13,file='JMA_seismic_data_2000.dat',status='old')
 
-  integer c
-  open (17, file='JMA_seismic_data_2000.dat', status='old')
+do i = 1,skip_lines
+    read(13,*)
+end do
 
-  open (27, file='Kumamoto_2000_new.dat', status='unknown')
-  ! === レコード数を調べる ===
-  n = 0
-  read (17, '()')
-  do
-    read (17, *, end=100) K, yyyy, mm, dd  ! ファイル終端ならば999に飛ぶ
-    n = n + 1
-  end do
-100 continue
- rewind (17)
 
-  ! ファイルの最初に戻る
+do i = 1, n
+    do j = 1,m
+    char_ary(i,j) = 'Z'
+    end do
+end do
 
-  print *, 'NumRec =', n
+do i = 1, n
+    read(13, *) token(1 : m) 
+    do j = 1, m
+        read(token(j), *, iostat = ios) a(i, j)
+        if (ios /= 0) a(i, j) = -1.0d+00
+        if (ios /= 0) char_ary(i,j) = token(j)
+    end do
+end do
 
-  ! === 読み込む ===
-  ! 読み飛ばす
- ! do i = 1,14
-  !  read(17,*)
- ! end do
+write(*,*)"yyyy   ","mm   ","dd  ","cnt"
 
- !!! なんか変
+do i = 1, n-1
+    if(a(i,4) == a(i+1,4)) then 
+        cnt = cnt + 1
+    else
+        do j = 2,m
+        write(*,'(i5)',advance='no')a(i,j)
+        end do
+        write(*,'(i5)')cnt+1
+        cnt = 0
+    endif
+end do
 
- ! 読み始める
-  read (17, '()')
-  do i = 1, n
-    read (17, *) K, yyyy, mm, dd
-    do
-     c = 0 
+close(13)
 
-     if (dd = dd)then
-      c = c + 1
-     endif
-    enddo
-
-    write(27, *) yyyy, mm, dd, c,"回"
-    
-    write(27, *) K, yyyy, mm, dd
-  end do
-
-  close (27)
-  close (17)
-
+stop
 end program test_clear_new
